@@ -1,0 +1,9 @@
+{
+    "parts": [
+        {
+            "id": "delete_location",
+            "path": "/locations/3300",
+            "operation": "delete"
+        }
+    ]
+}

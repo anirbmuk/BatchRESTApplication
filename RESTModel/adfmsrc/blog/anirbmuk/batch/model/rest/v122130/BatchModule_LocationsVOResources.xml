@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14"
+                id="BatchModule_LocationsVOResources" Package="blog.anirbmuk.batch.model.rest.v122130"
+                usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="LocationsVO1" RangeSize="5" DataControl="BatchModuleDataControl" id="LocationsVO1Iter"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="LocationsVO1Iter" id="locations" AccessorFolder="Always">
+      <nodeDefinition DefName="blog.anirbmuk.batch.model.view.LocationsVO"
+                      Name="blog.anirbmuk.batch.model.view.LocationsVO"/>
+    </tree>
+  </bindings>
+</pageDefinition>

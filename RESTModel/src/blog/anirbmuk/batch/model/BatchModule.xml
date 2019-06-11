@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="BatchModule"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="LocationsVO1"
+    ViewObjectName="blog.anirbmuk.batch.model.view.LocationsVO"/>
+  <ViewUsage
+    Name="DepartmentsVO1"
+    ViewObjectName="blog.anirbmuk.batch.model.view.DepartmentsVO"/>
+  <ViewUsage
+    Name="EmployeesVO1"
+    ViewObjectName="blog.anirbmuk.batch.model.view.EmployeesVO"/>
+</AppModule>

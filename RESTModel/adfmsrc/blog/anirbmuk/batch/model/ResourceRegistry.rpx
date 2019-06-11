@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.9.14" id="ResourceRegistry"
+             SeparateXMLFiles="false" Package="blog.anirbmuk.batch.model" ClientType="Generic">
+  <pageMap>
+    <page path="v122130_locations" usageId="v122130_BatchModule_LocationsVOResources"/>
+    <page path="v122130_departments" usageId="v122130_BatchModule_DepartmentsVOResources"/>
+    <page path="v122130_employees" usageId="v122130_BatchModule_EmployeesVOResources"/>
+  </pageMap>
+  <dataControlUsages>
+    <BC4JDataControl id="BatchModuleDataControl" Package="blog.anirbmuk.batch.model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="BatchModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+  <pageDefinitionUsages>
+    <page id="v122130_BatchModule_LocationsVOResources"
+          path="blog.anirbmuk.batch.model.rest.v122130.BatchModule_LocationsVOResources"/>
+    <page id="v122130_BatchModule_DepartmentsVOResources"
+          path="blog.anirbmuk.batch.model.rest.v122130.BatchModule_DepartmentsVOResources"/>
+    <page id="v122130_BatchModule_EmployeesVOResources"
+          path="blog.anirbmuk.batch.model.rest.v122130.BatchModule_EmployeesVOResources"/>
+  </pageDefinitionUsages>
+</Application>

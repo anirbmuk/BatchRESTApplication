@@ -1,0 +1,45 @@
+{
+    "parts": [
+        {
+            "id": "create_location",
+            "path": "/locations",
+            "operation": "create",
+            "payload": {
+                "LocationId": 3300,
+				"StreetAddress": "Some street address",
+				"PostalCode": "560107",
+				"City": "Bangalore",
+				"StateProvince": "Karnataka",
+				"CountryId": "IN"
+            }
+        },
+		{
+            "id": "create_department",
+            "path": "/departments",
+            "operation": "create",
+            "payload": {
+                "DepartmentId": 280,
+				"DepartmentName": "Test Department",
+				"LocationId": 1700
+            }
+        },
+		{
+            "id": "create_employee",
+            "path": "/employees",
+            "operation": "create",
+            "payload": {
+                "EmployeeId": 207,
+				"FirstName": "John",
+				"LastName": "Doe",
+				"Email": "JOHNDOE",
+				"PhoneNumber": "555.111.5151",
+				"HireDate": "2019-012-31T00:00:00+05:30",
+				"JobId": "AD_VP",
+				"Salary": 45000,
+				"CommissionPct": null,
+				"ManagerId": 100,
+				"DepartmentId": 90
+            }
+        }
+    ]
+}

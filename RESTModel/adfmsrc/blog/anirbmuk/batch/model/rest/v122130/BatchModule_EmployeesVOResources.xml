@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14"
+                id="BatchModule_EmployeesVOResources" Package="blog.anirbmuk.batch.model.rest.v122130"
+                usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="EmployeesVO1" RangeSize="5" DataControl="BatchModuleDataControl" id="EmployeesVO1Iter"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="EmployeesVO1Iter" id="employees" AccessorFolder="Always">
+      <nodeDefinition DefName="blog.anirbmuk.batch.model.view.EmployeesVO"
+                      Name="blog.anirbmuk.batch.model.view.EmployeesVO"/>
+    </tree>
+  </bindings>
+</pageDefinition>

@@ -1,0 +1,17 @@
+{
+    "parts": [
+        {
+            "id": "delete_location",
+            "path": "/locations/3200",
+            "operation": "delete"
+        },
+		{
+            "id": "update_employee",
+            "path": "/employees/206",
+            "operation": "update",
+			"payload": {
+				"Salary": 2790
+			}
+        }
+    ]
+}
